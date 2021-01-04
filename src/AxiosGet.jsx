@@ -26,10 +26,10 @@ class AxiosGet extends React.Component {
             <div>
                 <button onClick = {() => this.changeClick()}>Lihat Total Pendaftar</button>
                 {this.state.user.map(user => {
-                    if (this.state.getClick == 0) {
+                    if (this.state.getClick === 0) {
                         return <div></div>
                     }
-                    else if (this.state.getClick == 1) {
+                    else if (this.state.getClick === 1) {
                         return (
                             <div>
                                 <p>Total Pendaftar: {user.totalPendaftar}</p>
